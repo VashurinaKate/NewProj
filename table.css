@@ -1,0 +1,48 @@
+.header_2 {
+    padding-top: 40px;
+}
+
+.header_2 h2 {
+    width: auto;
+}
+
+.prod-img {
+    height: 400px;
+    width: 400px;
+}
+.job {
+    padding-top: 40px;
+}
+.job p {
+    padding-bottom: 20px;
+}
+.job h2 {
+    height: auto;
+}
+.block1 p {
+    float: right;
+    margin-left: 40px;
+    width: 600px;
+    text-align: left;
+    height: auto;
+    line-height: 25px;
+    padding-top: 0px;
+    padding-bottom: 10px;
+}
+.block1 {
+    padding-right: 0px;
+    height: auto;
+}
+.characteristics {
+    float: right;
+}
+.characteristics li {
+    height: auto;
+}
+.block img {
+    padding-left: 0px;
+}
+
+.getstart {
+    margin-top: 20px;
+}
