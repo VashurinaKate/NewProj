@@ -1,3 +1,4 @@
+
 .slider {
     height: 150px;
 }
@@ -9,11 +10,6 @@
 .header_2 h2 {
     width: 400px;
 }
-.block img {
-    margin-left: 80px;
-    padding-left: 0px;
-}
-
 .block img:hover {
     outline: 10px solid #67ebeb61
 }
@@ -25,18 +21,10 @@
 .slider_6 {
     margin-top: 40px;
 }
-
-.getstart {
-    margin-top: 120px;
-    margin-left: 480px;
-}
-.job {
-    margin-left: 60px;
-    margin-right: 0px;
-}
 .job p {
     font-family: 'Raleway', sans-serif;
-    width: 344px;
+    width: auto;
+    padding: 20px;
     color: #78909c;
     font-size: 15px;
     font-weight: 400;
@@ -46,7 +34,6 @@ li {
     color: grey;
     height: 50px;
 }
-
 hr {
     margin-top: 40px;
 }

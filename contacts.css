@@ -10,6 +10,7 @@
 }
 .job {
     padding-top: 0px;
+    height: 200px;
 }
 .form {
     padding-bottom: 100px;
@@ -20,4 +21,7 @@
 }
 .footer {
     height: auto;
+}
+#ymaps1610457582601293846 {
+    margin: 0 auto;
 }

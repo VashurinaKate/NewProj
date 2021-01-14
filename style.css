@@ -21,7 +21,7 @@ body {
 
 .container {
     margin: 0 auto;
-    width: 1200px;
+    width: 100%;
     flex: 1 0 auto;
 }
 
@@ -34,11 +34,6 @@ body {
     height: 650px;
     background-image: url(img/bg0.png);
     position: relative;
-    /*   
-    font-family: 'Mate', serif;
-    font-family: 'Raleway', sans-serif;
-    font-family: 'Roboto', sans-serif;
-    */
 }
 
 .padding-site {
@@ -71,9 +66,6 @@ body {
     text-decoration-line: underline;
     width: 53px;
     height: 11px;
-    /*
-    opacity: -1;
-    */
     color: #061e37;
     font-family: 'Raleway', sans-serif;
     font-size: 18px;
@@ -94,13 +86,9 @@ body {
 
 .slider-content {
     margin-top: 28px;
-    /* width: 580px; */
     width: 480px;
     text-align: left;
     height: 88px;
-    /*
-    opacity: -1;
-*/
     color: #ffffff;
     font-family: Raleway;
     font-size: 18px;
@@ -109,7 +97,6 @@ body {
 }
 
 .button-active {
-    /* opacity: -1; */
     color: #ffffff;
     font-family: Roboto;
     font-size: 15px;
@@ -125,9 +112,6 @@ body {
     background-color: #061e37;
     display: inline-block;
     margin-top: 38px;
-    /*
-    opacity: -1;
-    */
 }
 
 .button-inactive {
@@ -165,8 +149,14 @@ body {
     display: inline-block;
     float: right;
     margin-top: -15px;
+    text-decoration: none;
 }
-
+.button-sign:hover {
+    text-decoration: underline;
+}
+.button-sign:active {
+    box-shadow: inset 0px 0px 4px 2px #061e3754;
+}
 .menu-link:hover {
     color: black;
 }
@@ -234,11 +224,11 @@ body {
 
 .job {
     padding-top: 97px;
-    margin-left: 60px;
+    display: flex;
+    justify-content: center;
 }
 
-.job h2,
-p {
+.job h2 {
     width: 344px;
     text-align: center;
 }
@@ -267,13 +257,14 @@ p {
 }
 
 .block {
-    float: left;
+    flex-basis: 30%;
     height: 204px;
+    text-align: center;
+}
+.block p, .block h2 {
+    width: auto;
 }
 
-.block img {
-    padding-left: 138px;
-}
 
 .block1 h2 {
     padding-top: 45px;
@@ -287,23 +278,14 @@ p {
     padding-top: 45px;
 }
 
-.block1 {
-    padding-right: 40px;
-}
-
-.block3 {
-    padding-left: 40px;
-}
-
 .getstart {
-    margin-left: 550px;
-    display: inline-block;
+    display: block;
     width: 150px;
     height: 55px;
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.15);
     border-radius: 5px;
     background-color: #1de9b6;
-    margin-top: 78px;
+    margin: 70px auto;
     color: #ffffff;
     font-family: 'Raleway';
     font-size: 15px;
@@ -320,17 +302,16 @@ p {
 
 .business {
     display: inline-flex;
-    margin-top: 100px;
+    width: 100%;
+    justify-content: center;
 }
 
 .bl {
-    width: 300px;
-    height: 150px;
+    flex-basis: 25%;
 }
 
 .bl1 {
     background-color: #80d8ff;
-    /*opacity: -1;*/
 }
 
 .bl2 {
@@ -361,8 +342,7 @@ p {
 
 .slider_3 p {
     text-align: center;
-    margin-top: 29px;
-    margin-left: 350px;
+    margin: 30px auto;
     width: 555px;
     height: 39px;
     color: #b0bec5;
@@ -415,8 +395,7 @@ p {
     text-align: justify;
     overflow: hidden;
     display: block;
-    margin-left: 230px;
-    margin-top: 48px;
+    margin: 30px auto;
     width: 800px;
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
@@ -428,8 +407,7 @@ p {
 
 .dropdown {
     overflow: hidden;
-    margin-top: 20px;
-    margin-left: 230px;
+    margin: 20px auto;
     width: 800px;
     height: 50px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.13);
@@ -666,10 +644,7 @@ figcaption {
 .slider_6 {
     height: 680px;
     background-color: #fafafa;
-}
-
-.contact {
-    margin: 0 auto;
+    text-align: center;
 }
 
 .contact h2 {
@@ -735,7 +710,9 @@ figcaption {
     padding-left: 10px;
     padding-top: 10px;
 }
-
+.form {
+    text-align: center;
+}
 .form_2 {
     margin: 0 auto;
     width: 600px;
@@ -745,11 +722,10 @@ figcaption {
     background-position: 0 3px;
     padding-left: 25px;
     position: relative;
-    margin-left: 490px;
     margin-top: 20px;
 }
 
-lable {
+label {
     color: #061e37;
     font-family: 'Raleway', sans-serif;
     font-size: 15px;
@@ -757,14 +733,12 @@ lable {
 }
 
 .send {
-    float: right;
-    display: inline-block;
+    display: block;
     width: 150px;
     height: 55px;
     border-radius: 5px;
     background-color: #1de9b6;
-    margin-top: 20px;
-    margin-right: 525px;
+    margin: 20px auto;
     color: #ffffff;
     font-family: 'Raleway', sans-serif;
     font-size: 15px;
@@ -776,6 +750,7 @@ lable {
     text-decoration: none;
     cursor: pointer;
     border: 1px solid transparent;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.15);
 }
 
 .footer {
@@ -802,6 +777,9 @@ lable {
     font-size: 15px;
     font-weight: 400;
     line-height: 25px;
+}
+.menu-foot:hover {
+    color: #9de8de;
 }
 
 .menu_footer_1 li {
@@ -835,9 +813,10 @@ lable {
     padding-right: 49px;
 }
 .center {
-    margin-left: 435px;
+    text-align: center;
     color: white;
     margin-top: 50px;
+    font-family: 'Raleway', sans-serif;
     padding-bottom: 40px;
 }
 
