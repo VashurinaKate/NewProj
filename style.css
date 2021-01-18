@@ -34,6 +34,7 @@ body {
     height: 650px;
     background-image: url(img/bg0.png);
     position: relative;
+    background-size: cover;
 }
 
 .padding-site {
@@ -103,6 +104,7 @@ body {
     font-weight: 400;
     text-transform: uppercase;
     text-align: center;
+    text-decoration: none;
     letter-spacing: 3px;
     line-height: 55px;
     width: 150px;
@@ -113,6 +115,9 @@ body {
     display: inline-block;
     margin-top: 38px;
 }
+.button-active:hover {
+    background-color: #1de9b6;
+}
 
 .button-inactive {
     color: black;
@@ -120,6 +125,7 @@ body {
     font-size: 15px;
     font-weight: 400;
     text-transform: uppercase;
+    text-decoration: none;
     text-align: center;
     letter-spacing: 3px;
     line-height: 55px;
@@ -131,7 +137,9 @@ body {
     display: inline-block;
     margin-top: 38px;
 }
-
+.button-inactive:hover {
+    text-decoration: underline;
+}
 .button-sign {
     color: black;
     font-family: Roboto;
@@ -225,6 +233,7 @@ body {
 .job {
     padding-top: 97px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
 }
 
@@ -437,8 +446,9 @@ body {
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
-    width: 800px;
+    width: 400px;
     font-family: 'Raleway', sans-serif;
+    border-radius: 5px;
 }
 
 .dropdown-item a {
@@ -447,6 +457,7 @@ body {
     padding: 12px 16px;
     text-decoration: none;
     display: block;
+    border-bottom: 1px solid grey;
     text-align: left;
 }
 
@@ -514,7 +525,9 @@ body {
     letter-spacing: 3px;
     text-decoration: none;
 }
-
+.getstart_4:hover {
+    background-color: #1de9b6;
+}
 .citates {
     width: 500px;
     float: right;
@@ -752,7 +765,9 @@ label {
     border: 1px solid transparent;
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.15);
 }
-
+.send:hover {
+    color: black;
+}
 .footer {
     height: 300px;
     background-color: #061e37;
@@ -784,9 +799,10 @@ label {
 
 .menu_footer_1 li {
     float: left;
-
 }
-
+.menu_footer_1 a:hover {
+    color: #1de9b6;
+}
 .menu-footer_1 {
     text-decoration: none;
     color: #ffffff;

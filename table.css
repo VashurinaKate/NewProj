@@ -32,6 +32,7 @@
 .block1 {
     padding-right: 0px;
     height: auto;
+    display: flex;
 }
 .characteristics {
     float: right;
